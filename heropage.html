@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hero Page</title>
+<style>
+
+body, html {
+margin: 0;
+padding: 0;
+height: 100%;
+font-family: sans-serif;
+}
+
+.hero-section {
+height: 100vh; 
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;    
+background-image: url('gallery/wb.jpg');
+background-repeat: no-repeat;
+color: white;           
+text-align: center;
+
+}
+
+.hero-content h1 {
+font-size: 60px;
+color: white; 
+}
+
+.pagination {
+display: flex;
+flex-direction: row; 
+gap: 15px;
+margin-top: 0; 
+margin-bottom: 35px;
+}
+
+.page-btn {
+background-color: transparent;
+border: 1px solid white;
+color: white;
+padding: 10px 18px;
+border-radius: 50%; 
+cursor: pointer;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.page-btn.active {
+background-color: #ff8c00;
+border-color: transparent;
+color: white;
+}
+.page-btn:hover {
+background-color: #ff8c00;
+border-color: #ffb347;
+color: white;
+box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+.nav-btn {
+background-color: transparent;
+border: 1px solid white;
+color: white;
+padding: 10px 18px;
+border-radius: 50%; 
+cursor: pointer;
+}
+.nav-btn.active {
+background-color: #ff8c00;
+border-color: transparent;
+color: white;
+}
+.nav-btn:hover {
+background-color: #ff8c00;
+border-color: #ffb347;
+color: white;
+box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Activities</h1>
+        </div>
+
+<div class="pagination">
+<button class="nav-btn">&lt;</button>
+<button class="page-btn active">1</button>
+<button class="page-btn">2</button>
+<button class="page-btn">3</button>
+<button class="page-btn">4</button>
+<button class="nav-btn">&gt;</button>
+        </div>
+    </section>
+</body>
+</html>
